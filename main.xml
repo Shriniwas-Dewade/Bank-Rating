@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+		android:id="@+id/TextView1"
+		android:gravity="center"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:layout_marginTop="10px"
+		android:layout_marginBottom="50px"
+        android:text="Rate Banks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	
+	<Spinner
+		android:id="@+id/Spinner1"
+		android:layout_marginTop="10px"
+		android:layout_marginBottom="50px"
+		android:itemBackground="#FF00FF"
+		android:background="#00FF00"
+		android:gravity="center"
+		android:layout_below="@+id/TextView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	
+	<RatingBar
+		android:id="@+id/RatingBar"
+		android:gravity="center"
+		android:layout_below="@+id/Spinner1"
+		android:layout_marginBottom="20dp"
+		android:stepSize="0.5"
+		android:numStars="5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	
+	<Button
+		android:id="@+id/Button"
+		android:layout_below="@+id/RatingBar"
+		android:gravity="center"
+		android:text="Check Rate"
+		android:onClick="Click"
+		android:layout_marginBottom="24dp"
+		android:textColor="#AAFFBB"
+		android:background="#974465"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	
+	<Button
+		android:id="@+id/Button2"
+		android:layout_below="@+id/Button"
+		android:gravity="center"
+		android:text="See Bank"
+		android:onClick="toDo"
+		android:layout_marginBottom="24dp"
+		android:textColor="#AAFFBB"
+		android:background="#974465"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+		
+
+</RelativeLayout>
